@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <title>Formulario</title>
+
+</head>
+<body>
+    <div>
+      <h1 id="titulo">Cadastro de DEVs</h1>
+      <p id="subtitulo">Coloque sua credenciais nos espaços abaixo</p>
+      <br>
+      <form>
+        <fieldset class="grupo">
+          <div class="campo">
+           <label for="nome"><strong>Nome</strong></label>
+           <input type="text" name="nome" id="nome" required>
+          </div>
+
+          <div class="campo">
+           <label for="sobrenome"><strong>Sobrenome</strong></label>
+           <input type="text" name="sobrenome" id="sobrenome" required>
+          </div>
+
+          <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+          </div>
+
+          <div class="campo">
+            <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
+        
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>Front-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Back-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">Fullstack
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="notdev">Não sou desenvolvedor
+            </label>
+          </div>
+          <div class="campo">
+            <label for="experiencia"><strong>Qual seu nivel de experiencia?</strong></label>
+          
+            <select id="experiencia">
+                <option selected disabled value="">Selecione</option>
+                <option>Nenhuma</option>
+                <option>Trainee</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+
+
+
+            </select>
+
+          </div>
+
+
+
+        </fieldset>
+        <fieldset id="check">
+          <div class="campo">
+           <label><strong>Selecione quais linguagens você usa para desenvolver?</strong></label><br>
+           <input type="checkbox" id="linguagen0" name="linguagen0" value="nondev"
+           <label for="linguagen0">NÃO SOU DEV </label>
+           <input type="checkbox" id="linguagen1" name="linguagen1" value="HTML"
+           <label for="linguagen1">HTML </label>
+           <input type="checkbox" id="linguagen2" name="linguagen2" value="C++"
+           <label for="linguagen2">CSS </label>
+           <input type="checkbox" id="linguagen3" name="linguagen3" value="JAVASCRIPT"
+           <label for="linguagen3">JAVASCRIPT </label>
+           <input type="checkbox" id="linguagen4" name="linguagen4" value="PHP"
+           <label for="linguagen4">PHP </label>
+           <input type="checkbox" id="linguagen5" name="linguagen5" value="JAVA"
+           <label for="linguagen5">JAVA </label>
+           <input type="checkbox" id="linguagen6" name="linguagen6" value="REACT"
+           <label for="linguagen6">REACT </label>
+           <input type="checkbox" id="linguagen7" name="linguagen7" value="ASSEMBLY"
+           <label for="linguagen7">ASSEMBLY </label>
+           <input type="checkbox" id="linguagen8" name="linguagen8" value="PYTHON"
+           <label for="linguagen8">PYTHON </label>
+           <input type="checkbox" id="linguagen9" name="linguagen9" value="C#"
+           <label for="linguagen9">C# </label><br>
+        </fieldset>
+           
+           
+            <br>
+            <br>
+           <button type="submit" class="botao">Enviar Formulario</button><br><br><br>
+           
+           </form>
+
+
+
+    </div>
+
+
+
+</body>
+</html>
